@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Create Website From Preview [3]</title>
+        
+    </head>
+    
+    <style>
+        *{
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+        }
+        
+        #mycontainer{
+            width: 800px;
+            margin: 50px auto;
+        }
+       ul{
+            list-style: none;
+            margin: 0;
+           padding: 0;
+        }
+        ul li{
+           display: inline-block;
+            padding: 10px;
+            background: #EEE;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+         ul li.inactive{
+             background: #CCC;
+         }
+        
+        #mycontainer div{
+            padding: 10px;
+            background: #EEE;
+            min-height: 300px;
+        }
+        #mycontainer div:not(:first-of-type){
+           display: none;
+        }
+       
+    </style>
+    
+   
+    <body>
+        
+       <div id="mycontainer">
+           <ul id="my-tabs">
+               <li id="tab1">Home</li>
+               <li id="tab2" class="inactive">Services</li>
+               <li id="tab3" class="inactive">Option</li>
+               <li id="tab4" class="inactive">More</li>
+           </ul>
+           
+           <div id="tab1-content">Home Tab</div>
+           <div id="tab2-content">Services Tab</div>
+           <div id="tab3-content">option Tab</div>
+           <div id="tab4-content">More Tab</div>
+           
+        </div>
+        
+      
+        
+        
+        <!-- End Footer -->
+        
+        <script src="js/jquery-1.12.0.min.js"></script>
+        
+        <script src="js/custom.js"></script>
+    </body>
+</html>
